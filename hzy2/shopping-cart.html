@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Shoping Cart</title>
+    <link rel='stylesheet' href='assets/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='assets/css/owl.carousel.min.css'>
+    <link rel='stylesheet' href='assets/css/animated.css'>
+    <link rel='stylesheet' href='assets/css/font-awesome.css'>
+    <link rel='stylesheet' href='assets/css/ui.css'>
+    <link rel='stylesheet' href='assets/css/jquery.mmenu.all.css'>
+    <link rel='stylesheet' href='assets/css/flaticon.css'>
+    <link rel='stylesheet' href='assets/css/style.css'>
+</head>
+<body class="shoping-cart">
+    <header class="header header-style2">
+        <div class="header-mid">
+            <div class="container">
+                <div class="header-mid-left">
+                    <p class="wellcome-to">欢迎来到oldegg</p>
+                    <p class="register-or-login" id="log">
+                        <a href="admin/login.html" class="register">登录</a>
+                        或
+                        <a href="admin/register.html" class="login">注册</a>
+                    </p>
+                </div>
+                <div class="header-mid-right">
+                    <div class="header-mid-right-content">
+                        <a href="admin/profile.html">
+                            <i class="flaticon-user-outline"></i>
+                            我的账户
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom-left">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/LOGOGO.png" alt="logo">
+                        </a>
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="menu-primary">
+            <div class="container">
+                <a href="#categories-menu" class="menu-button categories-menu-button">
+                    分类<span class="flaticon-bars"></span>
+                </a>
+                <nav class="menu-item has-mega-menu" id="categories-menu">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#">分类</a>
+                            <span class="click-categories flaticon-bars"></span>
+                            <div class="category-drop-list">
+                                <div class="category-drop-list-inner">
+                                    <ul class="sub-menu sub-menu-open">
+                                        <li class="menu-item ">
+                                            <a href="categories.html?cp=cpu">CPU</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="categories.html?cp=gpu">显示处理器</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="categories.html?cp=ram">运行内存</a>
+                                        </li>
+                                        <li class="menu-item"><a href="categories.html?cp=disk">存储器</a></li>
+                                        <li class="menu-item"><a href="categories.html?cp=fan">热解决方案</a></li>
+                                        <li class="menu-item"><a href="categories.html?cp=case">机箱</a></li>
+                                        <li class="menu-item"><a href="categories.html?cp=psu">电源</a></li>
+                                        <li class="menu-item"><a href="categories.html?cp=motherboard">主板</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- End .banner -->
+    <div class="main-content container">
+        <h4 class="title-page">购物车</h4>
+        <div class="shop-table-content container">
+            <form class="shoping-form">
+                <a class="button button-check-out" id="check1" href="checkout.html">去结算</a>
+                <div class="div-table-cart" id="datatable">
+                    <table class="shop_table cart" >
+                        <thead>
+                            <tr>
+                                <th class="product-thumbnail">&nbsp;</th>
+                                <th class="product-name">产品名称</th>
+                                <th class="product-price">单价</th>
+                                <th class="product-subtotal">查看</th>
+                                <th class="product-subtotal">删除</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cart_item">
+                                <td class="product-thumbnail" data-title="">
+                                    <a href="#"><img height="150" width="185" alt="s_c" class="attachment-shop_thumbnail wp-post-image" src="assets/images/s_c.jpg"></a>
+                                </td>
+                                <td class="product-name" data-title="Product Name">
+                                    <a href="#">Fukasawa's Twelve watch</a>
+                                </td>
+                                <td class="product-price" data-title="Unit Price">
+                                    <span class="amount">$168.00</span>
+                                </td>
+                                <td class="product-subtotal" data-title="Subtotal">
+                                    <span class="amount">$168.00</span>
+                                </td>
+                                <td class="product-remove" data-title="Remove">
+                                    <a title="Remove this item" class="remove" href="#">×</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="button-cart">
+                        <a class="button button-check-out" href="#" onclick="clearcart(this)">清空购物车</a>
+                        <a class="button button-check-out" href="#">刷新购物车</a>
+                        <a class="button button-check-out" href="index.html">继续购物</a>
+                    </div>
+                </div>
+
+            </form>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="base-selector cart-box">
+                        <p>根据你的选择, 你可能对<br/>
+                            以下商品感兴趣:
+                        </p>
+                        <div class="base-selector-box">
+                            <figure><img src="assets/images/graphic2.png" alt="ba" height="118" width="100"></figure>
+                            <div class="base-selector-content">
+                                <a class="product-name" href="#">RX-590 AMD显卡</a>
+                                <p class="product-cost">1688.00元</p>
+                                <a class="button button-check-out" onclick="">添加到购物车</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="cart_totals cart-box">
+                        <table>
+                            <tbody>
+                            <tr class="grand">
+                                <th>总计:</th>
+                                <td><span class="amount" id="allfeiyong">$168.00</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <a class="button button-check-out" id="check2" href="/admin/checkout.html">去结算</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+      <footer class="footer">
+        <div class="container">
+            <hr class="supermartket-hr">
+        </div>
+        <div class="container">
+            <hr class="supermartket-hr">
+        </div>
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-md-3 has-logo">
+                        <div class="footer-top-logo">
+                            <h1 class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/LOGOGO.png" alt="logo">
+                                </a>
+                            </h1>
+                        </div>
+                        <div class="footer-infomation">
+                            <p><span>地址:</span>上海市建桥学院</p>
+                            <p><span>电话:</span>10086</p>
+                            <p><span>邮件:</span><a href="#">Support@hzy.com</a></p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="footer-top-title"><h4 class="title-footer">顾客服务</h4></div>
+                        <ul class="menu-footer">
+                            <li class="footer-item"><a href="#">My Account</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="footer-top-title"><h4 class="title-footer">产品</h4></div>
+                        <ul class="menu-footer">
+                            <li class="footer-item"><a href="admin/order.html">我的订单</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="backtotop ts-block"><span class="pulser"> Top</span></a>
+    </footer>
+    <!--end footer-->
+    <script type='text/javascript' src='assets/js/jquery.min.js'></script>
+    <script type='text/javascript' src='assets/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='assets/js/wow.min.js'></script>
+    <script type='text/javascript' src='assets/js/owl.carousel.min.js'></script>
+    <script type='text/javascript' src='assets/js/jquery.appear.min.js'></script>
+    <script type='text/javascript' src='assets/js/jquery.countTo.js'></script>
+    <script type='text/javascript' src='assets/js/ui.js'></script>
+    <script type='text/javascript' src='assets/js/jquery.bxslider.min.js'></script>
+    <script type='text/javascript' src='assets/js/jquery.mmenu.all.min.js'></script>
+    <script type='text/javascript' src='assets/js/chosen.jquery.min.js'></script>
+    <script type='text/javascript' src='assets/js/jquery.countdown.js'></script>
+    <script type='text/javascript' src='assets/js/frontend.js'></script>
+    <script type='text/javascript' src='assets/js/frontend.js'></script>
+    <script type='text/javascript' src='assets/js/val.js'></script>
+    <script type='text/javascript' src='assets/js/cart.js'></script>
+</body>
+</html>

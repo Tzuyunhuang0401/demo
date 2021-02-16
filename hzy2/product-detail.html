@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+<html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Product Detail</title>
+    <link rel='stylesheet' href='assets/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='assets/css/owl.carousel.min.css'>
+    <link rel='stylesheet' href='assets/css/animated.css'>
+    <link rel='stylesheet' href='assets/css/font-awesome.css'>
+    <link rel='stylesheet' href='assets/css/ui.css'>
+    <link rel='stylesheet' href='assets/css/jquery.mmenu.all.css'>
+    <link rel='stylesheet' href='assets/css/flaticon.css'>
+    <link rel='stylesheet' href='assets/css/style.css'>
+    
+</head>
+<body class="categories-page product-detail">
+    <header class="header header-style2">
+        <div class="header-mid">
+            <div class="container">
+                <div class="header-mid-left">
+                    <p class="wellcome-to">欢迎来到oldegg</p>
+                    <p class="register-or-login" id="log">
+                        <a href="admin/login.html" class="register">登录</a>
+                        或
+                        <a href="admin/register.html" class="login">注册</a>
+                    </p>
+                </div>
+                <div class="header-mid-right">
+                    <div class="header-mid-right-content">
+                        <a href="admin/profile.html">
+                            <i class="flaticon-user-outline"></i>
+                            我的账号
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom-left">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/LOGOGO.png" alt="logo">
+                        </a>
+                    </h1>
+                </div>
+                <div class="header-bottom-right">
+                    <div class="header-bottom-right-content cart-menu-relative">
+                        <div class="cart-menu">
+                            <a href="#">
+                                <i class="flaticon-commerce"></i>
+                                购物车
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="cart-hover">
+                            <div class="cart-hover-title">你挑选的商品 <span>价格</span></div>
+                            <div id="smallcart">
+                                <ul class="list-hover-cart">
+                                    <li class="hover-cart-item">
+                                        <a href="#" class="img-hover-cart">
+                                            <img src="assets/images/img-hover-cart.jpg" alt="img-hover-cart" width="75" height="89">
+                                            <span class="delete-product-hover-cart"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                                        </a>
+                                        <div class="text-hover-cart">
+                                            <a href="#" class="name-hover-cart">Men's Skagen Watch
+                                                Vesion 2.0</a>
+                                            <div class="quantity">
+                                                <p class="quanlity-hover-cart">Quanlity: <span>1</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="price-hover-cart">$150</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subtotal-hover-cart">共计 <span id="countm">0</span></div>
+                            <div class="button-cart-hover">
+                                <a href="shopping-cart.html" class="go-to-cart button">Go to cart</a>
+                                <a href="checkout.html" class="check-out button orange" id="check3">Check Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-primary">
+            <div class="container">
+                <a href="#categories-menu" class="menu-button categories-menu-button">
+                    Categories<span class="flaticon-bars"></span>
+                </a>
+                <nav class="menu-item has-mega-menu" id="categories-menu">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#">分类</a>
+                            <span class="click-categories flaticon-bars"></span>
+                            <div class="category-drop-list">
+                                <div class="category-drop-list-inner">
+                                    <ul class="sub-menu sub-menu-open">
+                                        <li class="menu-item ">
+                                            <a href="categories.html?cp=cpu">CPU</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="categories.html?cp=gpu">显示处理器</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="categories.html?cp=ram">运行内存</a>
+                                        </li>
+                                        <li class="menu-item"><a href="categories.html?cp=disk">存储器</a></li>
+                                        <li class="menu-item"><a href="categories.html?cp=fan">热解决方案</a></li>
+                                        <li class="menu-item"><a href="categories.html?cp=case">机箱</a></li>
+                                        <li class="menu-item"><a href="categories.html?cp=psu">电源</a></li>
+                                        <li class="menu-item"><a href="categories.html?cp=motherboard">主板</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#primary-navigation" class="menu-button primary-navigation-button">
+                    <span class="flaticon-bars"></span>Main Menu
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- End .banner -->
+    <div class="categories main-content">
+        <div class="container">
+            <div class="breadcrumb-sidebar">
+                <div class="breadcrumb-wrap">
+                    <nav class="breadcrumb-trail breadcrumbs">
+                        <ul class="trail-items">
+                            <li class="trail-item trail-begin">
+                                <a href="#"><span>Home</span></a>
+                            </li>
+                            <li class="trail-item trail-end">
+                                <span>Electronic</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="product-box product-box-primary">
+                <div class="product-box-content">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <figure class="img-product">
+                                <img src="assets/images/img-detail.jpg" alt="product" height="536" width="467" id="productimg">
+                                <div class="img-room"><img src="assets/images/room.jpg" alt="room" height="32" width="32"></div>
+                            </figure>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="single-product-content">
+                                <h3 class="product-title" id="productname">Men's Skagen Watch</h3>
+                                <a href="#" class="write" id="productcate">Write Your Review</a>
+                                <p class="product-cost" id="productprice">$200.00</p>
+                                <p class="stock">Availability:<span><i class="fa fa-check-square-o" aria-hidden="true"></i>In stock</span></p>
+                                <div class="desc-product-title">Quick OverView</div>
+                                <div class="desc-product" id="productdes">Cum altera mandamus in, mea verear disputationi et.
+                                    Vel regione discere ut, legere expetenda ut eos. In nam nibh invenire similique.
+                                    Atqui mollis ea his, ius graecis accommodare te. No eam tota nostrum cotidieque.
+                                </div>
+                                <div class="product-box-bottom">
+                                    <div class="button-detail">
+                                        <a href="#" class="add-to-cart" onclick="addcart(this)" id="addbutton"><i class="flaticon-commerce"></i>添加到购物车</a>
+                                        <a href="#" class="wishlist" onclick="addlike(this)"><i class="flaticon-like"></i></a>
+                                        <a href="#" class="refresh-product"><i class="flaticon-arrows"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-products product-tabs">
+                <ul  class="nav nav-pills">
+                    <li class="active">
+                        <a  href="#1a" data-toggle="tab">描述</a>
+                    </li>
+                    <li>
+                        <a href="#2a" data-toggle="tab">额外</a>
+                    </li>
+                </ul>
+                <div class="product-tabs-content tab-content clearfix">
+                    <div class="tab-pane active" id="1a">
+                        Lorem ipsum dolor sit amet, an munere tibique consequat mel, congue albucius no qui,
+                        at everti meliore erroribus sea. Vero graeco cotidieque ea duo, in eirmod insolens
+                        interpretaris nam. Pro at nostrud percipit definitiones, eu tale porro cum. Sea ne accusata
+                        voluptatibus. Ne cum falli dolor voluptua, duo ei sonet choro facilisis, labores officiis torquatos cum ei.
+                    </div>
+                    <div class="tab-pane" id="2a">
+                        <p id="descprite">Cum altera mandamus in, mea verear disputationi et. Vel regione discere ut,
+                            legere expetenda ut eos. In nam nibh invenire similique. Atqui mollis ea his,
+                            ius graecis accommodare te. No eam tota nostrum cotidieque. Est cu nibh clita.
+                            Sed an nominavi maiestatis, et duo corrumpit constituto, duo id rebum lucilius.
+                            Te eam iisque deseruisse, ipsum euismod his at. Eu putent habemus voluptua sit,
+                            sit cu rationibus scripserit, modus voluptaria ex per. Aeque dicam consulatu eu his,</p>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-slide relates">
+                <h3 class="title-detail-slide">相关产品</h3>
+                <div class="supermartket-owl-carousel" data-number="5" data-margin="30" data-navcontrol="yes" id="relatedlist1">
+                    <div class="product-box">
+                        <div class="product-box-content">
+                            <figure class="img-product">
+                                <img src="assets/images/p1.jpg" alt="product" height="207" width="175">
+                                <a href="#" class="flaticon-search"></a>
+                            </figure>
+                            <div class="product-box-text">
+                                <a href="#" class="product-name">Men's Skagen Watch</a>
+                                <p class="product-cost">$200.00</p>
+                                <div class="product-box-bottom">
+                                    <a href="#" class="add-to-cart"><i class="flaticon-commerce"></i>Add To Cart</a>
+                                    <a href="#" class="wishlist"><i class="flaticon-like"></i></a>
+                                    <a href="#" class="refresh-product"><i class="flaticon-arrows"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-box-content">
+                            <figure class="img-product">
+                                <img src="assets/images/p1.jpg" alt="product" height="207" width="175">
+                                <a href="#" class="flaticon-search"></a>
+                            </figure>
+                            <div class="product-box-text">
+                                <a href="#" class="product-name">Men's Skagen Watch</a>
+                                <p class="product-cost">$200.00</p>
+                                <div class="product-box-bottom">
+                                    <a href="#" class="add-to-cart"><i class="flaticon-commerce"></i>Add To Cart</a>
+                                    <a href="#" class="wishlist"><i class="flaticon-like"></i></a>
+                                    <a href="#" class="refresh-product"><i class="flaticon-arrows"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-box-content">
+                            <figure class="img-product">
+                                <img src="assets/images/p1.jpg" alt="product" height="207" width="175">
+                                <a href="#" class="flaticon-search"></a>
+                            </figure>
+                            <div class="product-box-text">
+                                <a href="#" class="product-name">Men's Skagen Watch</a>
+                                <p class="product-cost">$200.00</p>
+                                <div class="product-box-bottom">
+                                    <a href="#" class="add-to-cart"><i class="flaticon-commerce"></i>Add To Cart</a>
+                                    <a href="#" class="wishlist"><i class="flaticon-like"></i></a>
+                                    <a href="#" class="refresh-product"><i class="flaticon-arrows"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-box-content">
+                            <figure class="img-product">
+                                <img src="assets/images/p1.jpg" alt="product" height="207" width="175">
+                                <a href="#" class="flaticon-search"></a>
+                            </figure>
+                            <div class="product-box-text">
+                                <a href="#" class="product-name">Men's Skagen Watch</a>
+                                <p class="product-cost">$200.00</p>
+                                <div class="product-box-bottom">
+                                    <a href="#" class="add-to-cart"><i class="flaticon-commerce"></i>Add To Cart</a>
+                                    <a href="#" class="wishlist"><i class="flaticon-like"></i></a>
+                                    <a href="#" class="refresh-product"><i class="flaticon-arrows"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-box-content">
+                            <figure class="img-product">
+                                <img src="assets/images/p1.jpg" alt="product" height="207" width="175">
+                                <a href="#" class="flaticon-search"></a>
+                            </figure>
+                            <div class="product-box-text">
+                                <a href="#" class="product-name">Men's Skagen Watch</a>
+                                <p class="product-cost">$200.00</p>
+                                <div class="product-box-bottom">
+                                    <a href="#" class="add-to-cart"><i class="flaticon-commerce"></i>添加到购物车</a>
+                                    <a href="#" class="wishlist"><i class="flaticon-like"></i></a>
+                                    <a href="#" class="refresh-product"><i class="flaticon-arrows"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-box-content">
+                            <figure class="img-product">
+                                <img src="assets/images/p1.jpg" alt="product" height="207" width="175">
+                                <a href="#" class="flaticon-search"></a>
+                            </figure>
+                            <div class="product-box-text">
+                                <a href="#" class="product-name">Men's Skagen Watch</a>
+                                <p class="product-cost">$200.00</p>
+                                <div class="product-box-bottom">
+                                    <a href="#" class="add-to-cart"><i class="flaticon-commerce"></i>添加到购物车</a>
+                                    <a href="#" class="wishlist"><i class="flaticon-like"></i></a>
+                                    <a href="#" class="refresh-product"><i class="flaticon-arrows"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <footer class="footer">
+        <div class="container">
+            <hr class="supermartket-hr">
+        </div>
+        <div class="container">
+            <hr class="supermartket-hr">
+        </div>
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-md-3 has-logo">
+                        <div class="footer-top-logo">
+                            <h1 class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/LOGOGO.png" alt="logo">
+                                </a>
+                            </h1>
+                        </div>
+                        <div class="footer-infomation">
+                            <p><span>地址:</span>上海市建桥学院</p>
+                            <p><span>电话:</span>10086</p>
+                            <p><span>邮件:</span><a href="#">Support@hzy.com</a></p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="footer-top-title"><h4 class="title-footer">顾客服务</h4></div>
+                        <ul class="menu-footer">
+                            <li class="footer-item"><a href="#">My Account</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="footer-top-title"><h4 class="title-footer">产品</h4></div>
+                        <ul class="menu-footer">
+                            <li class="footer-item"><a href="admin/order.html">我的订单</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="backtotop ts-block"><span class="pulser"> Top</span></a>
+    </footer>
+    <!--end footer-->
+    <script type='text/javascript' src='assets/js/jquery.min.js'></script>
+    <script type='text/javascript' src='assets/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='assets/js/wow.min.js'></script>
+    <script type='text/javascript' src='assets/js/owl.carousel.min.js'></script>
+    <script type='text/javascript' src='assets/js/jquery.appear.min.js'></script>
+    <script type='text/javascript' src='assets/js/jquery.countTo.js'></script>
+    <script type='text/javascript' src='assets/js/ui.js'></script>
+    <script type='text/javascript' src='assets/js/jquery.bxslider.min.js'></script>
+    <script type='text/javascript' src='assets/js/jquery.mmenu.all.min.js'></script>
+    <script type='text/javascript' src='assets/js/chosen.jquery.min.js'></script>
+    <script type='text/javascript' src='assets/js/jquery.countdown.js'></script>
+    <script type='text/javascript' src='assets/js/frontend.js'></script>
+    <script type='text/javascript' src='assets/js/detail.js'></script>
+</body>
+</html>
